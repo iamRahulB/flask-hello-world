@@ -78,3 +78,6 @@ def job():
 		return render_template("/projects/project2/project2-final.html", name=results)
 	else:
 		return "Please provide all the required inputs"
+	
+if __name__ == '__main__':
+    app.run()	
