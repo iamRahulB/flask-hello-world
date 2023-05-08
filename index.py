@@ -6,6 +6,7 @@ from flask import session
 from job_result import JobSuggestionResult
 
 app = Flask(__name__,static_folder='static')
+app.static_folder='static'
 app.secret_key = 'ihfheiufhiweuhf7efyw8eyf8ye4y4'
 
 openai.api_key = os.environ["OPENAI_API"]
