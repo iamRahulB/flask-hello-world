@@ -60,7 +60,8 @@
 	font-weight: bold;
 	font-size: 2em;
 		width: 50%;
-
+font-family: 'Inconsolata', monospace;
+font-family: 'Prompt', sans-serif;
 	color: white;
 	
 }
