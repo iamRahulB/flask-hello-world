@@ -1,8 +1,22 @@
-.first-container{
+.top-main-p1{
 	display:flex;
 	justify-content:center;
 	align-items:center;
-	width:100%;
+	margin: 0 auto;
+	width:80%;
+	
+}
+.res{
+	margin: 0 auto;
+}
+.top-c-p1{
+
+}
+.first-container{
+	display:flex;
+	width:500px;
+	justify-content:center;
+	align-items:center;
 	flex-direction:column;
 	margin-top:1.5em;
 	height:100%;
@@ -13,20 +27,16 @@
 
 .container-main-first-project {
 	display:flex;
-	align-items:center;
 	justify-content:center;
-	width:80%;
+	width:100%;
 	
 	
 }
 
 .container-form-first-project{
-	width:70%;
+	width:100%;
 	border-radius:20px;	
-display:flex;
-	align-items:center;
-	flex-direction:column;
-	justify-content:center;	
+	
 	
 
 }
@@ -63,7 +73,7 @@ display:flex;
 
 .heading-container{
 	
-	width:80%;
+	width:100%;
 	display:flex;
 	align-items:center;
 	justify-content:center;
@@ -75,7 +85,7 @@ display:flex;
 	text-align: center;
 	font-size:1.7rem;
 	border:1px solid white;
-	width:70%;
+	width:100%;
 	border-radius:1rem;
 	padding:0.5em;
 	color:white;
@@ -88,3 +98,11 @@ display:flex;
 		font-size:100%;
 	}
 }
+
+
+@media screen and (max-width: 768px) { /* change the width at this screen size */
+  .first-container {
+    width: 100%; /* set new width */
+  }
+}
+
