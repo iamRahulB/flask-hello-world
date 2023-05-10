@@ -1,6 +1,12 @@
+.main-c{
+	display:flex;
+	justify-content: center;
+	align-items:center;
+}
+
 .container-card{
 	display:flex;
-	width:100%;
+	width:97%;
 	justify-content: center;
 	align-items:center;
 	justify-content:space-evenly;
