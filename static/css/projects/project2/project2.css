@@ -2,14 +2,12 @@
 	display:flex;
 	justify-content:center;
 	align-items:center;
-	height:90vh;
 }
 .note{
-	text-align:center;
-	width:15rem;
+	width:80%;
+    font-size:0.8rem;
 	margin-top:2em;
 	color:white;
-	border:1px solid white;
 	border-radius:1rem;
 	padding:0.6em;
 }
@@ -69,7 +67,7 @@
 .pro2-form [type="submit"]{
 		width:40%;
 	border-radius:0.3rem;
-	padding:0.2em;
+	padding:0.5em;
 	font-size:0.5rem;
 	margin-top:0.8em;
 	
@@ -93,21 +91,35 @@
 	justify-content:center;
 	align-items:center;
 		  text-align: center;
+		
+
 
 }
 
 
 .con-pro2-descptn div{
-	justify-content:middle;
+		background-color:black;
+
 }
 
 .con-pro2-descptn p{
-	text-align:center;
-	border:1px solid white;
 	border-radius:1rem;
 	padding:1em;
-		width:15rem;
+		width:20rem;
 	color:white;
+	opacity:0.5;
+	background-color:black;
+	padding-left:1em;
 
 }
+
+
+@media (max-width: 1390px){
+	.heading-container h1{
+		font-size:100%;
+	}
+}
+
+
+
 
