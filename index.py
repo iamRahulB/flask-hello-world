@@ -4,6 +4,8 @@ import openai
 from image_generator import generate_image
 from flask import session
 from job_result import JobSuggestionResult
+from discord_notifications import Disnotify
+
 
 app = Flask(__name__)
 app.secret_key = 'ihfheiufhiweuhf7efyw8eyf8ye4y4'
@@ -13,6 +15,7 @@ openai.api_key = os.environ["OPENAI_API"]
 
 @app.route('/')
 def index():
+	
 	return render_template("index.html")
 	# /projects/project2/project2.html
 
@@ -25,10 +28,17 @@ def projects():
 
 	
 	if name.strip() == '':
+		
 		return render_template("index.html", name="Please Enter Your Name!")
 
 	else:
+
+		disnotify=Disnotify()
+		disnotify.notification(name)
+		
+		
 		return render_template("projects.html", name=name)
+		
 
 
 @app.route("/project1", methods=["POST"])
@@ -78,6 +88,5 @@ def job():
 		return render_template("/projects/project2/project2-final.html", name=results)
 	else:
 		return "Please provide all the required inputs"
-	
-if __name__ == '__main__':
-    app.run()	
+
+app.run(host="0.0.0.0", port=81)
