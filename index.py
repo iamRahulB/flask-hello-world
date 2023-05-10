@@ -89,4 +89,5 @@ def job():
 	else:
 		return "Please provide all the required inputs"
 
-app.run(host="0.0.0.0", port=81)
+if __name__ == '__main__':
+    app.run()
